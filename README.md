@@ -1,5 +1,3 @@
-# annieli
-
 # Group Project Team 12482_1
 
 The concert management company needs to effectively track all aspects of their operations. The company owns several venues with different names, capacities, locations, and different main points of contact for rental inquiries. The venues grant spaces for multiple vendors of different names, types, and permits to sell items in their respective stalls that range in flat rental charges and sizes. The company also has a designated team of staff members that the company wants to store information about; the company wants to store information about their names, emails, phone numbers, addresses, and pay rates. The concert management team would also like to analyze the shifts of each staff member and retain data about the start and end time of the shifts. 
@@ -94,15 +92,15 @@ Table: Staff
 | city        | The staff's city of residence | Text  | 45 |      |  |
 | state       | The staff's state of residence | Text | 45 |      |  |
 | zipCode     | The staff's residence zip code | Text | 45 |      |  |
-| payRate     | The staff's pay rate per hour  | Double | 5 |     | |
+| payRate     | The staff's pay rate per hour  | Double | 5 | | XX.XX |
 | plannerID   | Unique Planner Identifier  | INT |        |   | FK |
 
 Table: Stall
 | Column Name      | Description             | Data Type | Size | Format | Key |
 | -----------      | ----------------------- | :-------- | ---- | ---- | -----
 | stallID          | Unique Stall Identifier | INT       |      |      | PK
-| flatRentalCharge | The stall's flat rental charge | Double |  |      |  |
-| squareMeters     | The stall's size in square meters | Double |      |   |  |
+| flatRentalCharge | The stall's flat rental charge | Double |  | XXXXX.XX    |  |
+| squareMeters     | The stall's size in square meters | Double |  | XX.XX  |  |
 | venueID          | Unique Venue Identifier | INT       |      |      | FK | 
 | vendorID         | Unique Vendor Identifier | INT      |      |      | FK |
 
@@ -111,7 +109,7 @@ Table: Ticket
 | -----------    | ----------------------- | :-------- | ---- | ---- | -----
 | ticketID       | Unique Ticket Identifier | INT      |      |      | PK
 | ticketPlatform | The platform that sells tickets | Text | 45 |     |  |
-| ticketCost     | The cost of the ticket     | Double |      |      |  |
+| ticketCost     | The cost of the ticket     | Double |      | XXX.XX |  |
 | seatNumber     | The seat number on ticket  | Text   |  5   |      |  | 
 | attendeeID     | Unique Attendee Identifier | INT    |      |      | FK |
 | concertID      | Unique Concert Identifier  | INT    |      |      | FK |
@@ -274,6 +272,48 @@ The selected columns from the tables include the ticket platform, ticket cost, c
 This query will provide a list of all concerts in 2022 that have tickets costing less than $30, along with their venue information.
 
 ```
+
+## Query Results
+
+Query 1:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q1().png?raw=true)
+
+Query2:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q2().png?raw=true)
+
+Query3:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q3().png?raw=true)
+
+Query 4:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q4().png?raw=true)
+
+Query 5:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q5().png?raw=true)
+
+Query 6:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q6().png?raw=true)
+
+Query 7:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q7().png?raw=true)
+
+Query 8:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q8().png?raw=true)
+
+Query 9:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q9().png?raw=true)
+
+Query 10:
+
+![App Screenshot](https://github.com/gracefazzone/MIST-4610-Group-Project/blob/main/TP_Q10().png?raw=true)
 
 ## SQL Query Matrix
 
